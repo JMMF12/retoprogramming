@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Simulador de inversión</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nombre</label>
+                <input type="text" placeholder="Nombre Completo" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="typeDocument">Tipo de documento</label>
+                <input type="text" placeholder="Ingrese un valor" id="typeDocument" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item", value="CC">CC - Cédula de ciudadanía</li>
+                    <li class="list-group-item", value="CE">CE - Cédula de extranjería</li>
+                    <li class="list-group-item", value="PPT">PPT - Pasaporte</li>
+                    <li class="list-group-item", value="PEP">PEP - Permisos especial de permanencia</li>
+                    <li class="list-group-item", value="RC">RC - Registro civil</li>
+                    <li class="list-group-item", value="TI">TI - Tarjeta de identidad</li>
+                </ul>
+            </div>
+            <div class="form-control">
+                <label for="amount">Valor a invertir</label>
+                <input type="text" placeholder="Ingrese un monto" id="amount" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Simular</button>
+            <br>
+            <div id="respuesta"></div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
